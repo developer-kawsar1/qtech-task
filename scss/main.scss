@@ -8,7 +8,9 @@
 
 
 // ===============================header============================== 
-
+.header_top{
+    background-color: #394357;;
+}
 .search_bar_header {
     padding: 10px 0;
     /* background-color: rgba(17, 1, 1, 0.041); */
@@ -67,6 +69,7 @@
 
     
     font-size: 20px; 
+    color: #000;
     }
 }
 
@@ -497,7 +500,8 @@ footer{
 		margin-right: 5px;
 		>div.heart {
 			margin-right: inherit;
-		}
+		} 
+     
 	}
 	.sign_in {
 		a {
@@ -535,5 +539,10 @@ footer{
         left: 5%;
         text-align: center;
         margin: auto;
+        display: none;
 	}
+}
+
+#menuToggle{
+    display: none;
 }

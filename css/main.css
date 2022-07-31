@@ -1,3 +1,7 @@
+.header_top {
+  background-color: #394357;
+}
+
 .search_bar_header {
   padding: 10px 0;
   /* background-color: rgba(17, 1, 1, 0.041); */
@@ -55,6 +59,7 @@
 
 .add_card_icon i {
   font-size: 20px;
+  color: #000;
 }
 
 .add_card_icon > div {
@@ -457,6 +462,7 @@ footer .img-container {
     left: 5%;
     text-align: center;
     margin: auto;
+    display: none;
   }
   .mobile_manu nav ul {
     list-style: none;
@@ -473,4 +479,8 @@ footer .img-container {
     color: #fff;
     padding: 10px;
   }
+}
+
+#menuToggle {
+  display: none;
 }

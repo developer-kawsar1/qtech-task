@@ -14,9 +14,47 @@
 </head>
 <body>
      
-<!-- ======================================headaer -->
+<!-- ======================================headaer=================================== -->
 
-<header>
+<header> 
+
+  <div class="header_top  d-none d-md-block ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 c0l-12 text-light py-2 ">
+          <span>Ship to </span>
+            <select name="" id="">
+              <option value=""> Bangladesh</option>
+              <option value=""> India</option>
+              <option value=""> Pakistan</option>
+            </select>
+        </div>
+        <div class="col-md-6 c0l-12 text-light py-2">
+
+          <div class="row">
+            <div class="col-4">
+              <div>
+                <i class="fa fa-truck" aria-hidden="true"></i> 
+                <span class="small fw-thiner">Trusted shipping</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div>
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                <span class="small fw-thiner">Easy RETURNS</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <span class="small fw-thiner">Trusted shipping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
       <div class="search_bar_header">
           <div class="row">
@@ -973,10 +1011,11 @@
     <!-- JavaScript Bundle with Popper -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script> 
+ var x = document.getElementById("menuToggle");
+ x.style.display == "none"
+function menuToggle(){ 
 
 
-function menuToggle(){
-  var x = document.getElementById("menuToggle"); 
   // alert(x)
   if (x.style.display === "none") {
     x.style.display = "block";
