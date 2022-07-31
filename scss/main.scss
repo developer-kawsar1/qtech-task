@@ -166,7 +166,9 @@
 			ul {
 				opacity: 1;
 				visibility: visible;
-				transform: translateY(0px);
+				transform: translateY(0px); 
+               
+                z-index: 200;
 			}
 		}
 	}
@@ -447,9 +449,11 @@ footer{
 	.mobile_header {
 		display: block;
 		box-shadow: 0 0 20px #0000000a;
-		padding: 0 16px;
+		padding: 10px 16px 0;
 		display: block; 
-        background-color: red;
+        background-color: #fff; 
+      
+        
 	}
 	.search_bar_header {
 		display: none;
@@ -461,7 +465,7 @@ footer{
 		>div {
 			width: 40px;
 			height: 2px;
-			background-color: #ddd;
+			background-color: #555;
 			&:nth-child(2) {
 				margin: 8px 0;
 			}
@@ -472,7 +476,7 @@ footer{
 			width: 100%;
 			a {
 				img {
-					width: 150px;
+					width: 100px;
 					height: auto;
 					margin-left: 40px;
 				}
@@ -513,6 +517,8 @@ footer{
 						text-transform: capitalize;
 						display: block;
 						border-bottom: 1px solid #ddd;
+                        color: #fff;
+                        padding: 10px;
 					}
 				}
 				list-style: none;
@@ -520,10 +526,14 @@ footer{
 				margin: 0;
 			}
 		}
-		width: 300px;
+		width: 90%;
 		position: absolute;
 		background: rgba(255, 255, 255, 0.146);
 		color: #fff;
-		top: 0;
+		top: 50px;
+        z-index: 1000;
+        left: 5%;
+        text-align: center;
+        margin: auto;
 	}
 }

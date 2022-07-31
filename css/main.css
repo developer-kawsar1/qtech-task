@@ -151,6 +151,7 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
+  z-index: 200;
 }
 
 .manu_ul li {
@@ -399,9 +400,9 @@ footer .img-container {
   .mobile_header {
     display: block;
     box-shadow: 0 0 20px #0000000a;
-    padding: 0 16px;
+    padding: 10px 16px 0;
     display: block;
-    background-color: red;
+    background-color: #fff;
   }
   .search_bar_header {
     display: none;
@@ -412,7 +413,7 @@ footer .img-container {
   .th_bar > div {
     width: 40px;
     height: 2px;
-    background-color: #ddd;
+    background-color: #555;
   }
   .th_bar > div:nth-child(2) {
     margin: 8px 0;
@@ -421,7 +422,7 @@ footer .img-container {
     width: 100%;
   }
   .mobile_header_left .logo a img {
-    width: 150px;
+    width: 100px;
     height: auto;
     margin-left: 40px;
   }
@@ -447,11 +448,15 @@ footer .img-container {
     color: #000;
   }
   .mobile_manu {
-    width: 300px;
+    width: 90%;
     position: absolute;
     background: rgba(255, 255, 255, 0.146);
     color: #fff;
-    top: 0;
+    top: 50px;
+    z-index: 1000;
+    left: 5%;
+    text-align: center;
+    margin: auto;
   }
   .mobile_manu nav ul {
     list-style: none;
@@ -465,5 +470,7 @@ footer .img-container {
     text-transform: capitalize;
     display: block;
     border-bottom: 1px solid #ddd;
+    color: #fff;
+    padding: 10px;
   }
 }

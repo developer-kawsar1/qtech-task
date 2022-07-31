@@ -18,11 +18,11 @@
 
 <header>
   <div class="container">
-      <div class="search_bar_header bg-success">
+      <div class="search_bar_header">
           <div class="row">
               <div class="col-md-2">
                   <div class="logo">
-                      <a href="#"><img src="assest/img/logo.png" alt="logo"></a>
+                      <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
                   </div>
               </div>
               <div class="col-md-7">
@@ -101,7 +101,7 @@
       </div>
       <!-- mobil manu -->
       
-      <div class="mobile_header bg-info">
+      <div class="mobile_header ">
           <div class="row ">
               <div class="col-6 ">
                   <div class="mobile_header_left d-flex align-items-center">
@@ -126,7 +126,7 @@
                                       </ul>
                                   </li>
                                   <li>
-                                      <a href="https://facebook.com">What’s new</a>
+                                      <a href="#">What’s new</a>
                                   </li>
                                   <li>
                                       <a href="#">Trending</a>
@@ -144,7 +144,7 @@
                           </nav>
                       </div>
                       <div class="logo">
-                          <a href="#"><img src="assets/images/hide-filter.png"  width="50" alt="logo"></a>
+                          <a href="#"><img src="assets/images/logo.png"  width="50" alt="logo"></a>
                       </div>
                   </div>
               </div>
@@ -152,12 +152,16 @@
                   <div class="mobile_header_right d-flex align-items-center justify-content-end">
                       <div class="search_bar_right h-100 d-flex align-items-center justify-content-end">
 
-                          <button class="btn-search">
-                                  <i class="fal fa-search"></i>
-                          </button>
+                         
+                          
+                          <div class="sign_in me-3">
+                              <a href="#" class="">
+                                  <i class="fa fa-search"></i>
+                              </a>
+                          </div>
                           <div class="sign_in">
-                              <a href="#">
-                                  <i class="fal fa-user-alt"></i>
+                              <a href="#" class="">
+                                  <i class="fa fa-user"></i>
                               </a>
                           </div>
                       </div>
@@ -968,7 +972,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script> 
     <!-- JavaScript Bundle with Popper -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script>
+<script> 
+
+
+function menuToggle(){
+  var x = document.getElementById("menuToggle"); 
+  // alert(x)
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
   var $range = $(".js-range-slider"),
     $from = $(".from"),
     $to = $(".to"),
