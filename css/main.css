@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
 .header_top {
   background-color: #394357;
 }
@@ -310,4 +315,56 @@ footer .img-container {
 
 .irs--round .irs-to {
   background-color: #DE3935 !important;
+}
+
+.carousel-item {
+  position: relative;
+  height: 400px;
+}
+
+.carousel-item .content {
+  position: absolute;
+  bottom: 2%;
+  padding-right: 30px;
+  width: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 3%;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel-item .buttons {
+  display: flex;
+}
+
+.carousel-item .buttons .btn-container {
+  background: #f1f1f1;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.pagination li a:hover {
+  color: #fff !important;
+}
+
+.bg-success-custom {
+  background: #95cc1f !important;
+}
+
+.model {
+  font-size: 11px;
+}
+
+.prize {
+  font-size: 14px;
+  color: #0d111b;
 }

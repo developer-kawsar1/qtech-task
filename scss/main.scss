@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import 'variables';
 
 // @import "../node_modules//bootstrap/scss/bootstrap.scss";
@@ -8,6 +8,10 @@
 
 
 // ===============================header============================== 
+body{
+    font-family: 'Poppins', sans-serif !important;
+   
+}
 .header_top{
     background-color: #394357;;
 }
@@ -347,7 +351,7 @@ footer{
 	}
 }
 
-
+// range slider custom css
 .irs--round .irs-handle {
     color: $primary !important;
     background-color: $primary !important;
@@ -363,4 +367,53 @@ footer{
 }
 .irs--round .irs-to{
   background-color: $primary !important;
-}
+} 
+
+
+// carusel custom css
+
+.carousel-item{
+    position: relative;
+    height: 400px;
+    .content{
+        position: absolute;
+        bottom: 2%;
+        padding-right: 30px;
+        width: 60%;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 3%;
+        
+      }
+      img{
+        height: 100%;
+      }
+      .buttons{
+        display: flex; 
+        .btn-container{
+            background: #f1f1f1;
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+          }
+      }
+  } 
+
+.pagination li a:hover {
+ color: #fff !important;
+} 
+.bg-success-custom {
+    background: #95cc1f !important;
+  }
+  .model {
+    font-size: 11px;
+  }
+  .prize {
+    font-size: 14px;
+    color: #0d111b;
+  }

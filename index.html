@@ -1,1138 +1,1402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qtech solution task </title> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qtech solution task</title>
     <!-- CSS only -->
-   <link rel="stylesheet" href="css/main.css">  
-<link rel="stylesheet" href="css/custom.css">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
-   
-   <style>
-     
-    .carousel-item{
-      position: relative;
-      height: 400px;
-    }
-   .carousel-item .content{
-     position: absolute;
-     bottom: 2%;
-     padding-right: 30px;
-     width: 60%;
-     top: 50%;
-     transform: translateY(-50%);
-     padding-left: 3%;
-     
-   }
-   .carousel-item img{
-     height: 100%;
-   }
-   
-  .buttons{
-    display: flex;
-  }
-  .btn-container{
-    background: #f1f1f1;
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-  }
- .bg-success{
-  background: #95CC1F !important;
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"
+    />
 
- }
-.model{
-  font-size: 11px;
-}
-.prize{
-  font-size: 14px;
-  color: #0D111B;
-}
-   </style>
-</head>
-<body>
+    <style>
+      
      
-<!-- ======================================headaer=================================== -->
+     
+    </style>
+  </head>
+  <body>
+    <!-- ======================================headaer=================================== -->
 
     <header>
-        <div class="container">
-            <div class="search_bar_header">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="logo">
-                            <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="search_bar">
-                            <form action="#">
-                                <div class="search_icon">
-                                    <button type="submit" class="btn-search">
-                                        <i class="fal fa-search"></i>
-                                    </button>
-                                    <input type="text" id="search" placeholder="what are you looking for?">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="search_bar_right h-100 d-flex align-items-center justify-content-end">
-                            <div class="add_card_icon d-flex">
-                                <div class="bag"><i class="fal fa-shopping-bag"></i></div>
-                                <div class="heart"><i class="fal fa-heart"></i></div>
-                            </div>
-                            <div class="sign_in">
-                                <a href="#">
-                                    <span>ةيبرعلا</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+      <div class="container">
+        <div class="search_bar_header">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="logo">
+                <a href="#"><img src="assets/images/logo.png" alt="logo" /></a>
+              </div>
             </div>
-            <!-- header_manu -->
-            <div class="header_manu">
-                <nav>
-                    <ul class="manu_ul">
-                        <li>
-                            <a href="#" class="drowp_down_manu_icon">All categories
-                                </a>
-                            <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">cotact</a></li>
-                                <li><a href="#">service</a></li>
-                                <li><a href="#">product</a></li>
-                                <li><a href="#">location</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">What’s new
-                                </a>
-                        </li>
-                        <li>
-                            <a href="#">Trending
-                                </a>
-                        </li>
-                        <li>
-                            <a href="#">Products
-                                </a>
-                        </li>
-                        <li>
-                            <a href="#">Shop
-                                </a>
-                        </li>
-                        <li>
-                            <a href="#">Contact
-                                </a>
-                        </li>
-                    </ul>
-                    <div class="sign_in">
-                        <a href="#">
-                            <span>Singn In</span>
-                        </a>
-                    </div>
-                </nav>
-
-
+            <div class="col-md-7">
+              <div class="search_bar">
+                <form action="#">
+                  <div class="search_icon">
+                    <button type="submit" class="btn-search">
+                      <i class="fal fa-search"></i>
+                    </button>
+                    <input
+                      type="text"
+                      id="search"
+                      placeholder="what are you looking for?"
+                    />
+                  </div>
+                </form>
+              </div>
             </div>
-            <!-- mobil manu -->
-            <div class="mobile_header">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-8">
-                        <div class="mobile_header_left d-flex align-items-center">
-                            <div class="th_bar">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="mobile_manu">
-                                <nav>
-                                    <div class="side_bar_header d-flex">
-                                        <div class="logo">
-                                            <a href="#"><img src="assets/images/logo.png" alt="logoo"></a>
-                                        </div>
-                                        <div class="close_manu">
-                                            <i class="fal fa-times"></i>
-                                        </div>
-                                    </div>
-                                    <ul class="mobile_manu_ul">
-                                        <li>
-                                            <a href="#" class="drowp_down_manu_icon">All categories</a>
-                                            <ul>
-                                                <li><a href="#">home</a></li>
-                                                <li><a href="#">about</a></li>
-                                                <li><a href="#">cotact</a></li>
-                                                <li><a href="#">service</a></li>
-                                                <li><a href="#">product</a></li>
-                                                <li><a href="#">location</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">What’s new</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Trending</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Products</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Shop</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="logo">
-                                <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-4">
-                        <div class="mobile_header_right d-flex align-items-center justify-content-end">
-                            <div class="search_bar_right h-100 d-flex align-items-center justify-content-end">
-
-                                <button class="btn-search">
-                                        <i class="fal fa-search"></i>
-                                </button>
-                                <div class="sign_in">
-                                    <a href="#">
-                                        <i class="fal fa-user-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-3">
+              <div
+                class="search_bar_right h-100 d-flex align-items-center justify-content-end"
+              >
+                <div class="add_card_icon d-flex">
+                  <div class="bag"><i class="fal fa-shopping-bag"></i></div>
+                  <div class="heart"><i class="fal fa-heart"></i></div>
                 </div>
-            </div>
-            <div class="mobile_manu_overly"></div>
-        </div>
-    </header>
-
-
-<!-- ======================================headaer ================================-->
-
-<!-- ======================================Carusal ================================-->
-  
-  <section class="">
-    <div class="container">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="assets/images/header-photo.png" class="d-block w-100" alt="...">
-            
-            <div class="content">
-              <h1>Welcome To Qtech Shop</h1>
-              <p>loremdbd djdj djdj djdjd djdjd djdj djdi djdb didj didbr didj djdj didj didb didjd did </p>
-              <button class="btn btn-danger rounded-pill">Buy now <span class="ms-5"><i class="fal fa-arrow-right"></i></span></button>
-              
-              
-              <div class="buttons mt-2">
-                <div class="btn-container" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-<i class="fal fa-angle-left"></i>
+                <div class="sign_in">
+                  <a href="#">
+                    <span>ةيبرعلا</span>
+                  </a>
                 </div>
-                                <div class="btn-container" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-<i class="fal fa-angle-right"></i>
-                                </div>
-                
               </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="assets/images/header-photo.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/header-photo.png" class="d-block w-100" alt="...">
-           .
-            
+        </div>
+        <!-- header_manu -->
+        <div class="header_manu">
+          <nav>
+            <ul class="manu_ul">
+              <li>
+                <a href="#" class="drowp_down_manu_icon">All categories </a>
+                <ul>
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">cotact</a></li>
+                  <li><a href="#">service</a></li>
+                  <li><a href="#">product</a></li>
+                  <li><a href="#">location</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">What’s new </a>
+              </li>
+              <li>
+                <a href="#">Trending </a>
+              </li>
+              <li>
+                <a href="#">Products </a>
+              </li>
+              <li>
+                <a href="#">Shop </a>
+              </li>
+              <li>
+                <a href="#">Contact </a>
+              </li>
+            </ul>
+            <div class="sign_in">
+              <a href="#">
+                <span>Singn In</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+        <!-- mobil manu -->
+        <div class="mobile_header">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-8">
+              <div class="mobile_header_left d-flex align-items-center">
+                <div class="th_bar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="mobile_manu">
+                  <nav>
+                    <div class="side_bar_header d-flex">
+                      <div class="logo">
+                        <a href="#"
+                          ><img src="assets/images/logo.png" alt="logoo"
+                        /></a>
+                      </div>
+                      <div class="close_manu">
+                        <i class="fal fa-times"></i>
+                      </div>
+                    </div>
+                    <ul class="mobile_manu_ul">
+                      <li>
+                        <a href="#" class="drowp_down_manu_icon"
+                          >All categories</a
+                        >
+                        <ul>
+                          <li><a href="#">home</a></li>
+                          <li><a href="#">about</a></li>
+                          <li><a href="#">cotact</a></li>
+                          <li><a href="#">service</a></li>
+                          <li><a href="#">product</a></li>
+                          <li><a href="#">location</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">What’s new</a>
+                      </li>
+                      <li>
+                        <a href="#">Trending</a>
+                      </li>
+                      <li>
+                        <a href="#">Products</a>
+                      </li>
+                      <li>
+                        <a href="#">Shop</a>
+                      </li>
+                      <li>
+                        <a href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="logo">
+                  <a href="#"
+                    ><img src="assets/images/logo.png" alt="logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-4">
+              <div
+                class="mobile_header_right d-flex align-items-center justify-content-end"
+              >
+                <div
+                  class="search_bar_right h-100 d-flex align-items-center justify-content-end"
+                >
+                  <button class="btn-search">
+                    <i class="fal fa-search"></i>
+                  </button>
+                  <div class="sign_in">
+                    <a href="#">
+                      <i class="fal fa-user-alt"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!--
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        
-        --->
+        <div class="mobile_manu_overly"></div>
       </div>
-    </div>
-  </section>
-  
-  
-<!-- ======================================Carusel================================ -->
+    </header>
 
+    <!-- ======================================headaer ================================-->
 
-    <!-- ====================main========================== --> 
+    <!-- ======================================Carusal ================================-->
 
+    <section class="">
+      <div class="container">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="assets/images/header-photo.png"
+                class="d-block w-100"
+                alt="..."
+              />
+
+              <div class="content">
+                <h1>Wellcome to qShop</h1>
+                <p>
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, fugiat! Adipisci labore deserunt, debitis nostrum
+                </p>
+                <button class="btn btn-danger rounded-pill">
+                  Buy now
+                  <span class="ms-5"><i class="fal fa-arrow-right"></i></span>
+                </button>
+
+                <div class="buttons mt-2">
+                  <div
+                    class="btn-container"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev"
+                  >
+                    <i class="fal fa-angle-left"></i>
+                  </div>
+                  <div
+                    class="btn-container"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next"
+                  >
+                    <i class="fal fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                src="assets/images/header-photo.png"
+                class="d-block w-100"
+                alt="..."
+              />
+
+              <div class="content">
+                <h1>Buy YOur Happiness</h1>
+                <p>
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, fugiat! Adipisci labore deserunt, debitis nostrum
+                </p>
+                <button class="btn btn-danger rounded-pill">
+                  Buy now
+                  <span class="ms-5"><i class="fal fa-arrow-right"></i></span>
+                </button>
+
+                <div class="buttons mt-2">
+                  <div
+                    class="btn-container"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev"
+                  >
+                    <i class="fal fa-angle-left"></i>
+                  </div>
+                  <div
+                    class="btn-container"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next"
+                  >
+                    <i class="fal fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="10000">
+              <img
+                src="assets/images/header-photo.png"
+                class="d-block w-100"
+                alt="..."
+              />
+
+              <div class="content">
+                <h1>Cheap and Qualityful</h1>
+                <p>
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, fugiat! Adipisci labore deserunt, debitis nostrum
+                </p>
+                <button class="btn btn-danger rounded-pill">
+                  Buy now
+                  <span class="ms-5"><i class="fal fa-arrow-right"></i></span>
+                </button>
+
+                <div class="buttons mt-2">
+                  <div
+                    class="btn-container"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev"
+                  >
+                    <i class="fal fa-angle-left"></i>
+                  </div>
+                  <div
+                    class="btn-container"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next"
+                  >
+                    <i class="fal fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================Carusel================================ -->
+
+    <!-- ====================main========================== -->
 
     <div class="container">
-        <div class="row mx-auto"> 
-          <!-- ====================================================================== 
+      <div class="row mx-auto">
+        <!-- ====================================================================== 
 
                                  sidebar 
           =========================================================================== -->
-          <div class="col-12 col-md-4 ">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item" id="accordionItem">
-                  <h2 class="accordion-header" id="headingOne">
-
-                    <button id="accordion-custom" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-                      <img src="assets/images/hide-filter.png" alt="">  <span class="ms-2">Filters</span>
+        <div class="col-12 col-md-4">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item" id="accordionItem">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  id="accordion-custom"
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <img src="assets/images/hide-filter.png" alt="" />
+                  <span class="ms-2">Filters</span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="price-range">
+                    <p class="text-secondary text-secondary small fw-bold">
+                      Price range
+                    </p>
+                    <!-- <div class="price-top d-flex justify-content-between small px-3">
+                            <p>000</p>
+                            <p>000</p>
+                          </div>  -->
+                    <div class="px-3">
+                      <input
+                        type="text"
+                        class="js-range-slider"
+                        name="my_range"
+                        value=""
+                        data-skin="round"
+                        data-type="double"
+                        data-min="56123"
+                        data-max="104512"
+                        data-grid="false"
+                      />
+                    </div>
+                    <div class="form-to d-flex justify-content-between mt-3">
+                      <p>From</p>
+                      <p>To</p>
+                    </div>
+                    <div class="input-box d-flex gap-2">
+                      <input
+                        type="number"
+                        class="form-control from"
+                        maxlength="6"
+                        value="56123"
+                      />
+                      <input
+                        type="number"
+                        class="form-control to text-danger"
+                        maxlength="6"
+                        value="104512"
+                      />
+                    </div>
+                    <button
+                      id="custom-btn"
+                      class="btn btn-block w-100 bg-danger mt-5 text-white"
+                    >
+                      Go
                     </button>
+                  </div>
 
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <div class="price-range">
-                          <p class="text-secondary text-secondary small fw-bold">Price range </p> 
-                          <div class="price-top d-flex justify-content-between small px-3">
-                            <p>000</p>
-                            <p>000</p>
-                          </div> 
-                          <div class="px-3">
+                  <!-- ===========category ========= -->
+                  <div class="category">
+                    <div class="title d-flex justify-content-between mt-3">
+                      <p class="small fw-bold text-secondary">Category</p>
+                      <a href="" class="text-danger text-decoration-none"
+                        >show all
+                      </a>
+                    </div>
 
-                            <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="50000" data-max="100000" data-grid="false" />
-                
-                
-                
-                
-                          </div> 
-                          <div class="form-to d-flex justify-content-between mt-3">
-                            <p>From</p>
-                            <p>To</p>
-                          </div> 
-                          <div class="input-box d-flex gap-2">
-                            <input type="number" class="form-control from " maxlength="6" value="50000">
-                            <input type="number" class="form-control to text-danger" maxlength="6" value="100000">
-                
-                          </div> 
-                          <button id="custom-btn" class="btn btn-block w-100 bg-danger mt-5 text-white">Go</button>
-
-                        </div> 
-
-                          <!-- ===========category ========= --> 
-                          <div class="category">
-                            <div class="title d-flex justify-content-between mt-3">
-                              <p class="small fw-bold text-secondary">Category</p> 
-                              <a href="" class="text-danger text-decoration-none">show all </a>
-                            </div> 
-
-                            <div class="category-radio mt-2">
-                              <ul>
-                                <li> <label>
-                                  <input type="radio" id="bed" name="radio" />
-                                  <span>Bed</span>
-                              </label>
-                            </li>
-                              <li>
-                                 <label>
-                                <input type="radio" id="chair" name="radio" checked/>
-                                <span>Chair</span>
-                            </label>
-                          </li> 
-                            <li> 
-                               <label>
-                              <input type="radio" id="table" name="radio"/>
-                              <span>Table</span>
+                    <div class="category-radio mt-2">
+                      <ul>
+                        <li>
+                          <label>
+                            <input type="radio" id="bed" name="radio" />
+                            <span>Bed</span>
                           </label>
-                           </li>
-                            <li> 
-                               <label>
-                              <input type="radio" id="wardrobe" name="radio"/>
-                              <span>Wardrobe</span>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="radio"
+                              id="chair"
+                              name="radio"
+                              checked
+                            />
+                            <span>Chair</span>
                           </label>
-                           </li>
-                            <li> 
-                               <label>
-                              <input type="radio" id="o-chair" name="radio"/>
-                              <span>Office Chair </span>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" id="table" name="radio" />
+                            <span>Table</span>
                           </label>
-                           </li>
-                            <li> 
-                               <label>
-                              <input type="radio" id="drawer" name="radio"/>
-                              <span>Drawer </span>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" id="wardrobe" name="radio" />
+                            <span>Wardrobe</span>
                           </label>
-                           </li>
-                              </ul>
-                            </div>
-                          </div> 
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" id="o-chair" name="radio" />
+                            <span>Office Chair </span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" id="drawer" name="radio" />
+                            <span>Drawer </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                            <!-- ===========Colors  ========= -->  
+                  <!-- ===========Colors  ========= -->
 
-                          
+                  <div class="checkbox-div mt-2">
+                    <div class="title d-flex justify-content-between mt-3">
+                      <p class="small fw-bold text-secondary">Colors</p>
+                      <a href="" class="text-danger text-decoration-none"
+                        >show all
+                      </a>
+                    </div>
+                    <ul>
+                      <li>
+                        <div>
+                          <input
+                            type="checkbox"
+                            id="black"
+                            name="colors"
+                            checked
+                          />
+                          <label for="black">Black</label>
+                        </div>
+                        <div class="color-name black"></div>
+                      </li>
+                      <li>
+                        <div>
+                          <input type="checkbox" id="white" name="colors" />
+                          <label for="white">White</label>
+                        </div>
+                        <div class="color-name white"></div>
+                      </li>
+                      <li>
+                        <div>
+                          <input type="checkbox" id="gold" name="colors" />
+                          <label for="gold">Gold</label>
+                        </div>
+                        <div class="color-name golden"></div>
+                      </li>
+                      <li>
+                        <div>
+                          <input type="checkbox" id="red" name="colors" />
+                          <label for="red">Red</label>
+                        </div>
+                        <div class="color-name red"></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- =============  Size ================= -->
 
-                            <div class="checkbox-div mt-2"> 
-                              <div class="title d-flex justify-content-between mt-3">
-                                <p class="small fw-bold text-secondary">Colors</p> 
-                                <a href="" class="text-danger text-decoration-none">show all </a>
-                              </div>  
-                              <ul>
-                                <li>
-                                  <div>
-                                    <input type="checkbox" id="black" name="colors"
-                                           checked>
-                                    <label for="black">Black</label>
-                                  </div> 
-                                  <div class="color-name black"></div>
-                                </li>
-                                <li>
-                                  <div>
-                                    <input type="checkbox" id="white" name="colors"
-                                           >
-                                    <label for="white">White</label>
-                                  </div> 
-                                  <div class="color-name white"></div>
-                                </li>
-                                <li>
-                                  <div>
-                                    <input type="checkbox" id="gold" name="colors"
-                                        >
-                                    <label for="gold">Gold</label>
-                                  </div> 
-                                  <div class="color-name golden"></div>
-                                </li>
-                                <li>
-                                  <div>
-                                    <input type="checkbox" id="red" name="colors"
-                                           >
-                                    <label for="red">Red</label>
-                                  </div> 
-                                  <div class="color-name red"></div>
-                                </li>
-                              </ul>
-                            </div> 
-                           <!-- =============  Size ================= --> 
+                  <div class="sizes-div">
+                    <div class="title d-flex justify-content-between mt-3">
+                      <p class="small fw-bold text-secondary">Sizes</p>
+                      <a href="" class="text-danger text-decoration-none"
+                        >show all</a
+                      >
+                    </div>
 
-                           <div class="sizes-div">
-                            <div class="title d-flex justify-content-between mt-3">
-                              <p class="small fw-bold text-secondary">Sizes</p> 
-                              <a href="" class="text-danger text-decoration-none">show all</a>
-                            </div>   
+                    <div class="size-container">
+                      <button>4x7</button>
+                      <button>4x7</button>
+                      <button>4x7</button>
+                      <button>4x7</button>
+                    </div>
+                  </div>
 
-                            <div class="size-container">
-                              <button>4x7</button>
-                              <button>4x7</button>
-                              <button>4x7</button>
-                              <button>4x7</button>
-                            </div>
-                           </div> 
+                  <!-- =============  Sorting  ================= -->
+                  <div class="sorting-div mt-2">
+                    <div class="title d-flex justify-content-between mt-3">
+                      <p class="small fw-bold text-secondary">Sort by</p>
+                    </div>
 
-
-                             <!-- =============  Sorting  ================= --> 
-                            <div class="sorting-div mt-2">
-                              <div class="title d-flex justify-content-between mt-3">
-                                <p class="small fw-bold text-secondary">Sort by</p> 
-                                 
-                              </div> 
-
-
-                              <div class="sorting-radio">
-                                <ul>
-                                  <li> <label>
-                                    <input type="radio" id="trending" name="sorting" checked />
-                                    <span>Trending</span>
-                                </label>
-                              </li>
-                                <li>
-                                   <label>
-                                  <input type="radio" id="featured"  name="sorting" />
-                                  <span>Featured</span>
-                              </label>
-                            </li> 
-                              <li> 
-                                 <label>
-                                <input type="radio" id="htol"  name="sorting"/>
-                                <span>Price High To Low</span>
-                            </label>
-                             </li>
-                              <li> 
-                                 <label>
-                                <input type="radio" id="ltoh"  name="sorting"/>
-                                <span>Price Low To HIgh</span>
-                            </label>
-                             </li>
-                            
-                            
-                                </ul>
-                              </div>
-                            </div>
+                    <div class="sorting-radio">
+                      <ul>
+                        <li>
+                          <label>
+                            <input
+                              type="radio"
+                              id="trending"
+                              name="sorting"
+                              checked
+                            />
+                            <span>Trending</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" id="featured" name="sorting" />
+                            <span>Featured</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" id="htol" name="sorting" />
+                            <span>Price High To Low</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" id="ltoh" name="sorting" />
+                            <span>Price Low To HIgh</span>
+                          </label>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-               
-               
               </div>
-          </div> 
-           <!-- ====================================================================== 
+            </div>
+          </div>
+        </div>
+        <!-- ====================================================================== 
 
                                  products 
           =========================================================================== -->
-          <div class="col-12 col-md-8 mt-5">
-            <div class="mail-top  d-flex justify-content-between">
-              <div class="left">
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link text-secondary active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                      
-<i class="fal fa-th-large"></i>
-
-                    </button>
-                    <button class="nav-link text-secondary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-list" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-
-                      <i class="fal fa-th-list"></i> 
-                    </button>
-                 
-                  </div>
-                </nav>
-                
-              </div> 
-               <div class="right d-flex w-75 justify-content-end align-items-center">
-                <div>
-                  <span class="text-secondary">Sort by</span> 
-                  <select name="" id="">
-                    <option value="">Popularity</option>
-                    <option value="">Trending</option>
-                    <option value="">Featured</option>
-                  </select>
+        <div class="col-12 col-md-8 mt-5">
+          <div class="mail-top d-flex justify-content-between">
+            <div class="left">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link text-secondary active"
+                    id="nav-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                  >
+                    <i class="fal fa-th-large"></i>
+                  </button>
+                  <button
+                    class="nav-link text-secondary"
+                    id="nav-profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-list"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                  >
+                    <i class="fal fa-th-list"></i>
+                  </button>
                 </div>
-                <div>
-                  <span class="text-secondary">Display </span> 
-                  <select name="" id="">
-                    <option value="">50 per page </option>
-                    <option value="">60 per page</option>
-                    <option value="">70 per page </option>
-                  </select>
-                </div>
-                <div class="ps-1 d-none d-md-block">
-                  <i class="fal fa-arrow-up" aria-hidden="true"></i>
-                  <i class="fal fa-arrow-down" aria-hidden="true"></i>
-                </div>
-              </div> 
-            </div> 
-
-
-            <!-- products --> 
-
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-
-             
-               <div class="container">
-                <div class="row"> 
-                  <!-- item one  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                      <!-- single product -->
-                    <div class="product shadow-sm p-3">
-                      <span class="badge bg-success text-dark text-white">Free Delivery</span> 
-                       <div class="img-container mx-auto d-flex justify-content-center">
-                        <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                       </div> 
-                       <p class="small custom "> metarial mehongonj wood </p>
-                       <p class="fw-bold model">AFL-BED-166</p>
-                       <p class="fs-6 fw-bold prize">BDT 63,675 /-</p>
-
-                       <div class="d-flex justify-content-between">
-                        <p class="text-danger fw-bold"> Select an option</p> 
-                        <p><i class="far fa-heart"></i></p>
-                       </div>
-                    </div>
-                  </div> 
-                      <!-- item two  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                    
-                    <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                    <span class="badge bg-info text-dark text-white">New arrival</span> 
-                     <div class="img-container mx-auto d-flex justify-content-center">
-                      <img src="assets/images/products/2.png" class="img-fluid d-block" alt="">
-                     </div> 
-                     <p class="small custom "> metarial mehongonj wood </p>
-                     <p class="fw-bold model">AFL-BED-166</p>
-                     <p class="fw-bold prize">BDT 63,675 /-</p>
-
-                     <div class="d-flex justify-content-between">
-                      <p class="text-danger fw-bold"> Out of stock</p> 
-                      <p><i class="far fa-heart"></i></p>
-                     </div>
-                  </div>
-                
-                </div> 
-
-                <!-- item three  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                       
-                    <!-- product  -->
-                    <div class="product shadow-sm p-3">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                       <div class="img-container mx-auto d-flex justify-content-center">
-                        <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                       </div> 
-                       <p class="small custom "> metarial mehongonj wood </p>
-                       <p class="fw-bold">AFL-BED-166</p>
-                       <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-  
-                       <div class="d-flex justify-content-between">
-                        <p class="text-primary fw-bold"> Out of stock</p> 
-                        <p><i class="far fa-heart"></i></p>
-                       </div>
-                    </div>
-                  
-                  </div>
-                  <!-- item one  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                      <!-- single product -->
-                    <div class="product shadow-sm p-3">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                       <div class="img-container mx-auto d-flex justify-content-center">
-                        <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                       </div> 
-                       <p class="small custom "> metarial mehongonj wood </p>
-                       <p class="fw-bold">AFL-BED-166</p>
-                       <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-
-                       <div class="d-flex justify-content-between">
-                        <p class="text-primary fw-bold"> Out of stock</p> 
-                        <p><i class="far fa-heart"></i></p>
-                       </div>
-                    </div>
-                  </div> 
-                      <!-- item two  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                    
-                    <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                    <span class="badge bg-info text-dark text-white">New arrival</span> 
-                     <div class="img-container mx-auto d-flex justify-content-center">
-                      <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                     </div> 
-                     <p class="small custom "> metarial mehongonj wood </p>
-                     <p class="fw-bold">AFL-BED-166</p>
-                     <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-
-                     <div class="d-flex justify-content-between">
-                      <p class="text-primary fw-bold"> Out of stock</p> 
-                      <p><i class="far fa-heart"></i></p>
-                     </div>
-                  </div>
-                
-                </div> 
-
-                <!-- item three  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                       
-                    <!-- product  -->
-                    <div class="product shadow-sm p-3">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                       <div class="img-container mx-auto d-flex justify-content-center">
-                        <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                       </div> 
-                       <p class="small custom "> metarial mehongonj wood </p>
-                       <p class="fw-bold">AFL-BED-166</p>
-                       <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-  
-                       <div class="d-flex justify-content-between">
-                        <p class="text-primary fw-bold"> Out of stock</p> 
-                        <p><i class="far fa-heart"></i></p>
-                       </div>
-                    </div>
-                  
-                  </div>
-                  <!-- item one  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                      <!-- single product -->
-                    <div class="product shadow-sm p-3">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                       <div class="img-container mx-auto d-flex justify-content-center">
-                        <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                       </div> 
-                       <p class="small custom "> metarial mehongonj wood </p>
-                       <p class="fw-bold">AFL-BED-166</p>
-                       <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-
-                       <div class="d-flex justify-content-between">
-                        <p class="text-primary fw-bold"> Out of stock</p> 
-                        <p><i class="far fa-heart"></i></p>
-                       </div>
-                    </div>
-                  </div> 
-                      <!-- item two  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                    
-                    <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                    <span class="badge bg-info text-dark text-white">New arrival</span> 
-                     <div class="img-container mx-auto d-flex justify-content-center">
-                      <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                     </div> 
-                     <p class="small custom "> metarial mehongonj wood </p>
-                     <p class="fw-bold">AFL-BED-166</p>
-                     <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-
-                     <div class="d-flex justify-content-between">
-                      <p class="text-primary fw-bold"> Out of stock</p> 
-                      <p><i class="far fa-heart"></i></p>
-                     </div>
-                  </div>
-                
-                </div> 
-
-                <!-- item three  -->
-                  <div class="col-md-4 col-12 mt-5"> 
-                       
-                    <!-- product  -->
-                    <div class="product shadow-sm p-3">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                       <div class="img-container mx-auto d-flex justify-content-center">
-                        <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                       </div> 
-                       <p class="small custom "> metarial mehongonj wood </p>
-                       <p class="fw-bold">AFL-BED-166</p>
-                       <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-  
-                       <div class="d-flex justify-content-between">
-                        <p class="text-primary fw-bold"> Out of stock</p> 
-                        <p><i class="far fa-heart"></i></p>
-                       </div>
-                    </div>
-                  
-                  </div>
-                </div>
-               </div>
-
-
-              </div>
-              <div class="tab-pane fade" id="nav-list" role="tabpanel" aria-labelledby="nav-profile-tab">
-                
-              
-                 <div class="container">
-                  <div class="row">
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12 mt-3"> 
-
-                        <!-- product  -->
-                    <div class="product shadow-sm p-3 ">
-                      <span class="badge bg-info text-dark text-white">New arrival</span> 
-                        <div class="d-flex justify-content-between">
-                          <div class="img-container mx-auto d-flex justify-content-center">
-                            <img src="assets/images/products/1.png" class="img-fluid d-block" alt="">
-                           </div> 
-                        
-                        <div>
-                          <p class="small custom "> metarial mehongonj wood </p>
-                          <p class="fw-bold">AFL-BED-166</p>
-                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
-     
-                          <div class="d-flex justify-content-between">
-                           <p class="text-primary fw-bold"> Out of stock</p> 
-                           <p><i class="far fa-heart"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                  </div> 
-
-                 
-                 </div>
-              
-              
-              </div>
-              
-            </div> 
-
-            <!-- tab end  --> 
-            <div class="row">
-            
-                <div class="col-12 col-md-6 mx-auto mt-5">
-                  <nav class="pagination ">
-                      <ul class="">
-                        <li><a href="#" class="d-flex"><span class="me-1"><i class="fa fa-angle-left" aria-hidden="true"></i></span> <span>Previous</span></a></li>
-
-                        <li> <a href="#">1</a></li>
-                        <li> <a href="#">2</a></li>
-                        <li> <a href="#">...</a></li>
-                        <li> <a href="#">20</a></li>
-                        <li><a href="#" class="d-flex "> <span class="me-1">Next</span> <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
-                      </ul>
-                  </nav>
-                </div>
-           
+              </nav>
             </div>
-
+            <div
+              class="right d-flex w-75 justify-content-end align-items-center"
+            >
+              <div>
+                <span class="text-secondary">Sort by</span>
+                <select name="" id="">
+                  <option value="">Popularity</option>
+                  <option value="">Trending</option>
+                  <option value="">Featured</option>
+                </select>
+              </div>
+              <div>
+                <span class="text-secondary">Display </span>
+                <select name="" id="">
+                  <option value="">50 per page</option>
+                  <option value="">60 per page</option>
+                  <option value="">70 per page</option>
+                </select>
+              </div>
+              <div class="ps-1 d-none d-md-block">
+                <i class="fal fa-arrow-up" aria-hidden="true"></i>
+                <i class="fal fa-arrow-down" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
-         
-        </div> 
 
-  
+          <!-- products -->
 
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+            >
+              <div class="container">
+                <div class="row">
+                  <!-- item one  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- single product -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-success-custom text-dark text-white"
+                        >Free Delivery</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/1.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold model">AFL-BED-166</p>
+                      <p class="fs-6 fw-bold prize">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-danger fw-bold">Select an option</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item two  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/2.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold model">AFL-BED-166</p>
+                      <p class="fw-bold prize">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-danger fw-bold">Out of stock</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item three  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/1.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold">AFL-BED-166</p>
+                      <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary fw-bold">Out of stock</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item one  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- single product -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/1.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold">AFL-BED-166</p>
+                      <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary fw-bold">Out of stock</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item two  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/1.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold">AFL-BED-166</p>
+                      <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary fw-bold">Out of stock</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item three  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/1.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold">AFL-BED-166</p>
+                      <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary fw-bold">Out of stock</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item one  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- single product -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/1.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold">AFL-BED-166</p>
+                      <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary fw-bold">Out of stock</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item two  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/1.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold">AFL-BED-166</p>
+                      <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary fw-bold">Out of stock</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item three  -->
+                  <div class="col-md-4 col-12 mt-5">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div
+                        class="img-container mx-auto d-flex justify-content-center"
+                      >
+                        <img
+                          src="assets/images/products/1.png"
+                          class="img-fluid d-block"
+                          alt=""
+                        />
+                      </div>
+                      <p class="small custom">metarial mehongonj wood</p>
+                      <p class="fw-bold">AFL-BED-166</p>
+                      <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary fw-bold">Out of stock</p>
+                        <p><i class="far fa-heart"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-list"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+            >
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <!-- product  -->
+                    <div class="product shadow-sm p-3">
+                      <span class="badge bg-info text-dark text-white"
+                        >New arrival</span
+                      >
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="img-container mx-auto d-flex justify-content-center"
+                        >
+                          <img
+                            src="assets/images/products/1.png"
+                            class="img-fluid d-block"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <p class="small custom">metarial mehongonj wood</p>
+                          <p class="fw-bold">AFL-BED-166</p>
+                          <p class="fs-6 fw-bold">BDT 63,675 /-</p>
+
+                          <div class="d-flex justify-content-between">
+                            <p class="text-primary fw-bold">Out of stock</p>
+                            <p><i class="far fa-heart"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tab end  -->
+          <div class="row">
+            <div class="col-12 col-md-6 mx-auto mt-5">
+              <nav class="pagination">
+                <ul class="">
+                  <li>
+                    <a href="#" class="d-flex"
+                      ><span class="me-1"
+                        ><i class="fa fa-angle-left" aria-hidden="true"></i
+                      ></span>
+                      <span>Previous</span></a
+                    >
+                  </li>
+
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">20</a></li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <span class="me-1">Next</span>
+                      <span
+                        ><i
+                          class="fa fa-angle-right"
+                          aria-hidden="true"
+                        ></i></span
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
-    <!-- ====================main========================== --> 
+    </div>
+    <!-- ====================main========================== -->
 
-
-       <!-- ====================Footr========================== --> 
-    <footer class="py-5"> 
-
+    <!-- ====================Footr========================== -->
+    <footer class="py-5">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 col-sm-6 col-md-3 mt-3">
-            <div class="footer-content d-flex  align-items-center">
-             <div class="left">
+            <div class="footer-content d-flex align-items-center">
+              <div class="left">
                 <div class="img-container">
-                 <img src="assets/images/footer/Support/question.png" alt="">
+                  <img src="assets/images/footer/Support/question.png" alt="" />
                 </div>
-             </div> 
-             <div class="right ms-4">
-              <div class="fw-light text-secondary small">Help center</div> 
-              <div><a class="text-black text-decoration-none" href="mailto:help@shop.com">help@shop.com</a></div>
-             </div>
+              </div>
+              <div class="right ms-4">
+                <div class="fw-light text-secondary small">Help center</div>
+                <div>
+                  <a
+                    class="text-black text-decoration-none"
+                    href="mailto:help@shop.com"
+                    >help@shop.com</a
+                  >
+                </div>
+              </div>
             </div>
-
-     </div>
-     <div class="col-12 col-sm-6 col-md-3 mt-3">
-      <div class="footer-content d-flex align-items-center">
-        <div class="left">
-           <div class="img-container">
-            <img src="assets/images/footer/Support/envelop.png" alt="">
-           </div>
-        </div> 
-        <div class="right ms-4">
-         <div class="fw-light text-secondary small">Email Support</div> 
-         <div><a class="text-black text-decoration-none" href="mailto:help@shop.com">Info@shop.com</a></div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mt-3">
+            <div class="footer-content d-flex align-items-center">
+              <div class="left">
+                <div class="img-container">
+                  <img src="assets/images/footer/Support/envelop.png" alt="" />
+                </div>
+              </div>
+              <div class="right ms-4">
+                <div class="fw-light text-secondary small">Email Support</div>
+                <div>
+                  <a
+                    class="text-black text-decoration-none"
+                    href="mailto:help@shop.com"
+                    >Info@shop.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mt-3">
+            <div class="footer-content d-flex align-items-center">
+              <div class="left">
+                <div class="img-container">
+                  <img src="assets/images/footer/Support/question.png" alt="" />
+                </div>
+              </div>
+              <div class="right ms-4">
+                <div class="fw-light text-secondary small">Phone</div>
+                <div>
+                  <a class="text-black text-decoration-none" href=""
+                    >01847004700</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mt-3">
+            <div class="footer-content d-flex flex-wrap">
+              <img
+                src="assets/images/footer/play-store.png"
+                class="img-fluid"
+                alt=""
+              />
+              <img
+                src="assets/images/footer/app-store.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-       </div>
-     </div>
-     <div class="col-12 col-sm-6 col-md-3 mt-3">
-      <div class="footer-content d-flex align-items-center ">
-        <div class="left">
-           <div class="img-container">
-            <img src="assets/images/footer/Support/question.png" alt="">
-           </div>
-        </div> 
-        <div class="right ms-4">
-         <div class="fw-light text-secondary small">Phone</div> 
-         <div><a class="text-black text-decoration-none" href="">01847004700</a></div>
-        </div>
-       </div>
-     </div>
-     <div class="col-12 col-sm-6 col-md-3 mt-3">
-      
-      <div class="footer-content d-flex flex-wrap">
-        <img src="assets/images/footer/play-store.png" class="img-fluid" alt="">
-        <img src="assets/images/footer/app-store.png" class="img-fluid" alt="">
-      </div>
-
-     </div>
-        </div> 
-
 
         <div class="row border-top py-5">
-          <div class="col-12 col-md-4 text-center text-md-start d-flex flex-column flex-md-row">
-            <a class="link-secondary text-decoration-none " href="#">Term of use <span>-</span></a> 
-            <a class="link-secondary text-decoration-none" href="#">Privecy Policy <span>-</span></a> <span>-</span>
-            <a class="link-secondary text-decoration-none" href="#">Term of Return <span>-</span></a> <span>-</span>
-          </div> 
+          <div
+            class="col-12 col-md-4 text-center text-md-start d-flex flex-column flex-md-row"
+          >
+            <a class="link-secondary text-decoration-none" href="#"
+              >Term of use <span>-</span></a
+            >
+            <a class="link-secondary text-decoration-none" href="#"
+              >Privecy Policy <span>-</span></a
+            >
+            <span>-</span>
+            <a class="link-secondary text-decoration-none" href="#"
+              >Term of Return <span>-</span></a
+            >
+            <span>-</span>
+          </div>
           <div class="col-12 col-md-4 text-center">
             <div>
-              <a href="" class="link-secondary me-3"><i class="fa-lg fa fa-linkedin-square" aria-hidden="true"></i></a>
-              <a href="" class="link-secondary me-3"><i class="fa-lg fa fa-facebook-official"></i></a>
-              <a href="" class="link-secondary me-3"><i class="fa-lg fa fa-twitter"></i></a>
+              <a href="" class="link-secondary me-3"
+                ><i class="fa-lg fa fa-linkedin-square" aria-hidden="true"></i
+              ></a>
+              <a href="" class="link-secondary me-3"
+                ><i class="fa-lg fa fa-facebook-official"></i
+              ></a>
+              <a href="" class="link-secondary me-3"
+                ><i class="fa-lg fa fa-twitter"></i
+              ></a>
             </div>
           </div>
 
           <div class="col-12 col-md-4 text-center text-md-end">
-            <a class="link-secondary text-decoration-none " href="#">Term of use</a> <span>-</span>
+            <a class="link-secondary text-decoration-none" href="#"
+              >Term of use</a
+            >
+            <span>-</span>
           </div>
         </div>
       </div>
-
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
-<script src="js/bootstrap.js"></script>
-<script src="js/app.js"></script>
-<script> 
- 
-  var $range = $(".js-range-slider"),
-    $from = $(".from"),
-    $to = $(".to"),
-    range,
-    min = $range.data('min'),
-    max = $range.data('max'),
-    from,
-    to;
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      var $range = $(".js-range-slider"),
+        $from = $(".from"),
+        $to = $(".to"),
+        range,
+        min = $range.data("min"),
+        max = $range.data("max"),
+        from,
+        to;
 
-  var updateValues = function() {
-    $from.prop("value", from);
-    $to.prop("value", to);
-  };
+      var updateValues = function () {
+        $from.prop("value", from);
+        $to.prop("value", to);
+      };
 
-  $range.ionRangeSlider({
-    onChange: function(data) {
-      from = data.from;
-      to = data.to;
-      updateValues();
-    }
-  });
+      $range.ionRangeSlider({
+        onChange: function (data) {
+          from = data.from;
+          to = data.to;
+          updateValues();
+        },
+      });
 
-  range = $range.data("ionRangeSlider");
-  var updateRange = function() {
-    range.update({
-      from: from,
-      to: to
-    });
-  };
+      range = $range.data("ionRangeSlider");
+      var updateRange = function () {
+        range.update({
+          from: from,
+          to: to,
+        });
+      };
 
-  $from.on("input", function() {
-    from = +$(this).prop("value");
-    if (from < min) {
-      from = min;
-    }
-    if (from > to) {
-      from = to;
-    }
-    updateValues();
-    updateRange();
-  });
+      $from.on("input", function () {
+        from = +$(this).prop("value");
+        if (from < min) {
+          from = min;
+        }
+        if (from > to) {
+          from = to;
+        }
+        updateValues();
+        updateRange();
+      });
 
-  $to.on("input", function() {
-    to = +$(this).prop("value");
-    if (to > max) {
-      to = max;
-    }
-    if (to < from) {
-      to = from;
-    }
-    updateValues();
-    updateRange();
-  });
-</script>
-</body>
+      $to.on("input", function () {
+        to = +$(this).prop("value");
+        if (to > max) {
+          to = max;
+        }
+        if (to < from) {
+          to = from;
+        }
+        updateValues();
+        updateRange();
+      });
+    </script>
+  </body>
 </html>
-
-
