@@ -289,6 +289,28 @@ footer{
         top: 50%;
         transform: translateY(-50%);
         padding-left: 3%;
+        p{
+            color: #667085;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        button{
+            background-color: $primary !important;
+            padding: 7px 20px;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            transition: all .3s;
+            
+            &:hover{
+                background-color: crimson !important;
+                font-size: 15px;
+              
+
+
+            }
+         
+        }
         
       }
       img{

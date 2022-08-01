@@ -252,6 +252,26 @@ footer .img-container {
   padding-left: 3%;
 }
 
+.carousel-item .content p {
+  color: #667085;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.carousel-item .content button {
+  background-color: #DE3935 !important;
+  padding: 7px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  transition: all .3s;
+}
+
+.carousel-item .content button:hover {
+  background-color: crimson !important;
+  font-size: 15px;
+}
+
 .carousel-item img {
   height: 100%;
 }
