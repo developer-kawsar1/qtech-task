@@ -1,196 +1,9 @@
+
+
 .header_top {
   background-color: #394357;
 }
 
-.search_bar_header {
-  padding: 10px 0;
-  /* background-color: rgba(17, 1, 1, 0.041); */
-}
-
-.search_bar_header .logo a {
-  width: 100%;
-}
-
-.search_bar_header .logo a img {
-  height: auto;
-  width: 120px;
-}
-
-.search_icon {
-  position: relative;
-}
-
-.search_icon input {
-  width: 100%;
-  height: 40px;
-  padding-left: 40px;
-  border: none;
-  outline: none;
-  border-radius: 8px;
-  background-color: #FCFCFC;
-}
-
-.search_icon input:focus {
-  outline: 1px solid #27375670;
-}
-
-.search_icon .btn-search {
-  position: absolute;
-  left: 0;
-  /* z-index: 9; */
-  border: none;
-  /* background: #fff; */
-  transform: translate3d(-50%, -50%, 0);
-  top: 50%;
-  left: 20px;
-  padding: 2px 6px;
-  color: #000;
-  width: 30px;
-  height: 100%;
-  background: transparent;
-  /* border-radius: 50%; */
-}
-
-.add_card_icon {
-  border-right: 1px solid #000;
-  margin-right: 25px;
-  color: #fff;
-}
-
-.add_card_icon i {
-  font-size: 20px;
-  color: #000;
-}
-
-.add_card_icon > div {
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.add_card_icon > div.heart {
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-.add_card_icon > div.bag::before {
-  content: "";
-  position: absolute;
-  height: 22px;
-  width: 22px;
-  top: 0;
-  left: 0;
-  background-color: red;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 10px;
-  left: 25px;
-  transform: translate3d(-50%, -50%, 0);
-  font-weight: bold;
-  border: 2px solid #fff;
-}
-
-.add_card_icon > div.bag::after {
-  content: "2";
-  position: absolute;
-  height: 25px;
-  width: 25px;
-  font-size: 14px;
-  top: 0;
-  left: 0;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 10px;
-  left: 25px;
-  transform: translate3d(-50%, -50%, 0);
-  font-weight: bold;
-}
-
-/*header_manu*/
-.manu_ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  line-height: 40px;
-}
-
-.manu_ul > li a {
-  text-decoration: none;
-  color: #394357;
-}
-
-.manu_ul > li:nth-child(n+2) > a {
-  padding: 0 15px;
-}
-
-.manu_ul > li > ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: absolute;
-  width: 200px;
-  opacity: 0;
-  visibility: hidden;
-  transition: .2s;
-  transform: translateY(40px);
-  background-color: #fff;
-}
-
-.manu_ul > li > ul > li a {
-  width: 100%;
-  display: block;
-}
-
-.manu_ul > li:hover ul {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0px);
-  z-index: 200;
-}
-
-.manu_ul li {
-  position: relative;
-}
-
-.manu_ul li ul li {
-  text-transform: capitalize;
-  text-transform: capitalize;
-  line-height: 35px;
-  padding-left: 12px;
-  border-bottom: 1px solid #ddd;
-}
-
-.drowp_down_manu_icon::after {
-  content: "\f078";
-  font-family: "Font Awesome 5 Pro";
-  margin: 0 8px;
-}
-
-.header_manu {
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
-}
-
-.header_manu nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mobile_header {
-  display: none;
-}
 
 .accordion-body {
   text-align: left;
@@ -376,6 +189,8 @@
   border: 1px solid #DE3935;
 }
 
+
+
 #accordion-custom:focus {
   outline: 0 !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
@@ -440,10 +255,14 @@ footer .img-container {
     font-size: 25px;
     margin-right: 10px;
   }
+  
+  
   .add_card_icon {
     border-right: inherit;
     margin-right: 5px;
   }
+  
+  
   .add_card_icon > div.heart {
     margin-right: inherit;
   }
@@ -452,18 +271,26 @@ footer .img-container {
     text-decoration: none;
     color: #000;
   }
+  
+  
+  
   .mobile_manu {
-    width: 90%;
+    
+    width: 300px;
     position: absolute;
-    background: rgba(255, 255, 255, 0.146);
+    background: #fff;
     color: #fff;
-    top: 50px;
-    z-index: 1000;
-    left: 5%;
-    text-align: center;
-    margin: auto;
-    display: none;
-  }
+    top: 0;
+    background-color: #F7FAFC;
+    left: 0;
+    height: 100%;
+    padding: 20px;
+    transform: translateX(-350px);
+    transition: transform .3s ease-in-out;
+    z-index: 9;
+  } 
+  
+  
   .mobile_manu nav ul {
     list-style: none;
     padding: 0;
@@ -485,6 +312,7 @@ footer .img-container {
   display: none;
 }
 
+
 select {
   border: 1px solid gray;
   outline: 0;
@@ -502,7 +330,9 @@ select {
   top: 50%;
 }
 
+
 .carousel-caption {
   text-align: left !important;
   left: 0% !important;
+  
 }
